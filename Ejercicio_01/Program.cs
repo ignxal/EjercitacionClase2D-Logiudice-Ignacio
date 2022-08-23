@@ -8,12 +8,12 @@ namespace Ejercicio_01
         static void Main()
         {
             string numInput;
-            int total = 5;
-            float max = 0;
-            float min = 0;
-            float acum = 0;
-            float prom;
-            for (int i = 0; i < total; i++)
+            int totalInputs = 5;
+            float maxNum = 0;
+            float minNum = 0;
+            float acumNum = 0;
+            float promNum;
+            for (int i = 0; i < totalInputs; i++)
             {
                 Console.WriteLine("Ingrese un numero: ");
                 numInput = Console.ReadLine();
@@ -22,21 +22,21 @@ namespace Ejercicio_01
                 {
                     if (i > 0)
                     {
-                        if(parsedInput > max)
+                        if(parsedInput > maxNum)
                         {
-                            max = parsedInput;
+                            maxNum = parsedInput;
                         }
-                        if(parsedInput < min)
+                        if(parsedInput < minNum)
                         {
-                            min = parsedInput;
+                            minNum = parsedInput;
                         }
                     }
                     else
                     {
-                        max = parsedInput;
-                        min = parsedInput;
+                        maxNum = parsedInput;
+                        minNum = parsedInput;
                     }
-                    acum += parsedInput;
+                    acumNum += parsedInput;
                 }
                 else
                 {
@@ -47,11 +47,11 @@ namespace Ejercicio_01
 
             }
 
-            prom = acum / total;
+            promNum = acumNum / totalInputs;
 
-            Console.WriteLine($"Numero maximo: {max}");
-            Console.WriteLine($"Numero minimo: {min}");
-            Console.WriteLine($"Promedio: {prom}");
+            Console.WriteLine($"Numero maximo: {maxNum}");
+            Console.WriteLine($"Numero minimo: {minNum}");
+            Console.WriteLine($"Promedio: {promNum}");
 
 
         }
