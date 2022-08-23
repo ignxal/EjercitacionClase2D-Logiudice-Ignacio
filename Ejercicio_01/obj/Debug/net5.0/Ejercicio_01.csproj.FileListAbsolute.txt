@@ -1,0 +1,16 @@
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.exe
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.runtimeconfig.json
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.runtimeconfig.dev.json
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.dll
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\bin\Debug\net5.0\Ejercicio_01.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.dll
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\refint\Ejercicio_01.dll
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\Ejercicio_01.genruntimeconfig.cache
+C:\Users\ignac\Documents\Facultad\Labo2\1__Class\Ejercicio_01\obj\Debug\net5.0\ref\Ejercicio_01.dll
