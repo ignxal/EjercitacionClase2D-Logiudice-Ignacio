@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Ejercicio_02\\Ejercicio_02.csproj",
+      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_02\\Ejercicio_02.csproj",
       "projectName": "Ejercicio_02",
-      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Ejercicio_02\\Ejercicio_02.csproj",
+      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_02\\Ejercicio_02.csproj",
       "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Ejercicio_02\\obj\\",
+      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_02\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ignac\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Console\\Console.csproj",
+      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Console\\Console.csproj",
       "projectName": "Console",
-      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Console\\Console.csproj",
+      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Console\\Console.csproj",
       "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\1__Class\\Console\\obj\\",
+      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Console\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ignac\\AppData\\Roaming\\NuGet\\NuGet.Config",
