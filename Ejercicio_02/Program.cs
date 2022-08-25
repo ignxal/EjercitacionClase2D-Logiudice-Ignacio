@@ -12,7 +12,7 @@ namespace Ejercicio_02
             Console.WriteLine("Ingrese un numero: ");
             numInput = Console.ReadLine();
 
-            while (float.TryParse(numInput, out parsedNum) == false || parsedNum <= 0)
+            while (!float.TryParse(numInput, out parsedNum)|| parsedNum <= 0)
             {
                 Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                 Console.WriteLine("Ingrese un numero: ");
