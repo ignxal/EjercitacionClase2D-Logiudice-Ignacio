@@ -21,6 +21,7 @@ namespace Ejercicio_05
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese un numero: ");
                     userInput = Console.ReadLine();
+                    inputWasParsed = int.TryParse(userInput, out parsedNum);
                 }
 
                 if (userInput == "salir")
