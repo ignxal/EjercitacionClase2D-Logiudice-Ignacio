@@ -8,20 +8,20 @@ namespace Ejercicio_03
         {
             string userInput;
             string userAnswer;
-            int parsedNum;
             bool wasParsed;
 
             do
             {
                 Console.Write("Ingrese un numero: ");
                 userInput = Console.ReadLine();
-                wasParsed = int.TryParse(userInput, out parsedNum);
+                wasParsed = int.TryParse(userInput, out int parsedNum);
 
-                while (userInput != "salir" && wasParsed == false)
+                while (userInput != "salir" && !wasParsed)
                 {
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese un numero: ");
                     userInput = Console.ReadLine();
+                    wasParsed = int.TryParse(userInput, out parsedNum);
                 }
 
                 if (userInput == "salir")
@@ -33,7 +33,7 @@ namespace Ejercicio_03
                 for (int i = 2; i <= parsedNum; i++)
                 {
                     
-                    if (isPrime(i))
+                    if (IsPrime(i))
                     {   
                         Console.Write(i + " - ");
                     }
@@ -52,7 +52,7 @@ namespace Ejercicio_03
             } while (userAnswer != "no");
         }
 
-        static bool isPrime(int number)
+        static bool IsPrime(int number)
         {
             bool returnValue = true;
 
