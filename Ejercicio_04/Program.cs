@@ -26,7 +26,7 @@ namespace Ejercicio_04
         static bool IsPerfectNum(int number)
         {
             bool returnValue = false;
-            int dividers = 0;
+            int numDividers = 0;
 
             for (int i = 1; i < number; i++)
             {
@@ -35,10 +35,10 @@ namespace Ejercicio_04
                     continue;
                 }
 
-                dividers += i;
+                numDividers += i;
             }
 
-            if(number - dividers == 0)
+            if(number - numDividers == 0)
             {
                 returnValue = true;
             }
