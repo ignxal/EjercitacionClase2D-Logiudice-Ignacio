@@ -1,0 +1,16 @@
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.exe
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.runtimeconfig.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.runtimeconfig.dev.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\bin\Debug\net5.0\Ejercicio_06.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\refint\Ejercicio_06.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\Ejercicio_06.genruntimeconfig.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ejercicio_06\obj\Debug\net5.0\ref\Ejercicio_06.dll
