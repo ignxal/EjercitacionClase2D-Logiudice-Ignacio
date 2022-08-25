@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 
 namespace Ejercicio_06
 {
@@ -16,11 +17,12 @@ namespace Ejercicio_06
                 userInput = Console.ReadLine();
                 inputWasParsed = int.TryParse(userInput, out int parsedInitialYear);
 
-                while (userInput != "salir" && inputWasParsed == false)
+                while (userInput != "salir" && !inputWasParsed)
                 {
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese año de inicio: ");
                     userInput = Console.ReadLine();
+                    inputWasParsed = int.TryParse(userInput, out parsedInitialYear);
                 }
 
 
@@ -33,11 +35,12 @@ namespace Ejercicio_06
                 userInput = Console.ReadLine();
                 inputWasParsed = int.TryParse(userInput, out int parsedFinalYear);
 
-                while (userInput != "salir" && inputWasParsed == false)
+                while (userInput != "salir" && !inputWasParsed)
                 {
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese año de fin: ");
                     userInput = Console.ReadLine();
+                    inputWasParsed = int.TryParse(userInput, out parsedFinalYear);
                 }
 
                 if (userInput == "salir")
