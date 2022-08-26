@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Linq;
 using System.Xml.Linq;
 
@@ -21,10 +22,10 @@ namespace Ejercicio_07
 
             do
             {
-                parsedHourValue = GetDouble("valor hora");
-                name = GetString("nombre");
-                parsedAntiquity = GetInt("antigüedad (años)");
-                parsedWorkedHours = GetInt("horas trabajadas");
+                parsedHourValue = GetDouble("Ingresar valor de hora: ", "ERROR. ¡Reingresar valor hora!");
+                name = GetString("Ingresar nombre: ", "ERROR. ¡Reingresar nombre!");
+                parsedAntiquity = GetInt("Ingresar antigüedad (años): ", "ERROR. ¡Reingresar antigüedad (años)!");
+                parsedWorkedHours = GetInt("Ingresar horas trabajadas: ", "ERROR. ¡Reingresar horas trabajadas!");
 
                 totalGrossSalary = GetTotalGrossSalary(parsedHourValue, parsedWorkedHours, parsedAntiquity);
                 discount = GetDiscount(totalGrossSalary);
@@ -32,50 +33,12 @@ namespace Ejercicio_07
 
                 DisplayPaycheck(name, parsedAntiquity, parsedHourValue, totalGrossSalary, totalNetSalary);
 
-                Console.Write("\n\nDesea calcular otro recibo? (si/no): ");
-                userAnswer = Console.ReadLine();
-
-                while (userAnswer != "si" && userAnswer != "no")
-                {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar respuesta!\n\n");
-                    Console.Write("Desear volver a operar? (si/no): ");
-                    userAnswer = Console.ReadLine();
-                }
+                userAnswer = GetAnswer("Desea calcular otro recibo? (si/no): ", "ERROR. ¡Reingresar respuesta!");
 
             } while (userAnswer != "no");
         }
 
-        static string GetString(string consoleMessage)
-        {
-            string userInput;
-            userInput = GetUserInput(consoleMessage);
-
-            while (string.IsNullOrEmpty(userInput) || userInput.Any(char.IsDigit))
-            {
-                userInput = GetUserInput(consoleMessage, true);
-            }
-
-            return userInput;
-        }
-
-        static int GetInt(string consoleMessage)
-        {
-            string userInput;
-            bool inputWasParsed;
-
-            userInput = GetUserInput(consoleMessage);
-            inputWasParsed = int.TryParse(userInput, out int parsedInt);
-
-            while (!inputWasParsed)
-            {
-                userInput = GetUserInput(consoleMessage, true);
-                inputWasParsed = int.TryParse(userInput, out parsedInt);
-            }
-
-            return parsedInt;
-        }
-
-        static double GetDouble(string consoleMessage)
+        static double GetDouble(string consoleMessage, string consoleMessageError)
         {
             string userInput;
             bool inputWasParsed;
@@ -85,23 +48,54 @@ namespace Ejercicio_07
 
             while (!inputWasParsed)
             {
-                userInput = GetUserInput(consoleMessage, true);
+                userInput = GetUserInput(consoleMessage, consoleMessageError);
                 inputWasParsed = double.TryParse(userInput, out parsedDouble);
             }
 
             return parsedDouble;
         }
 
-        static string GetUserInput(string consoleMessage, bool wasAnError = false)
+        static string GetString(string consoleMessage, string consoleMessageError)
         {
-            if (wasAnError)
+            string userInput;
+            userInput = GetUserInput(consoleMessage);
+
+            while (string.IsNullOrEmpty(userInput) || userInput.Any(char.IsDigit))
             {
-                Console.WriteLine($"\nERROR. ¡Reingresar {consoleMessage}!\n");
+                userInput = GetUserInput(consoleMessage, consoleMessageError);
             }
-            Console.Write($"Ingrese {consoleMessage}: ");
+
+            return userInput;
+        }
+
+        static int GetInt(string consoleMessage, string consoleMessageError)
+        {
+            string userInput;
+            bool inputWasParsed;
+
+            userInput = GetUserInput(consoleMessage);
+            inputWasParsed = int.TryParse(userInput, out int parsedInt);
+
+            while (!inputWasParsed)
+            {
+                userInput = GetUserInput(consoleMessage, consoleMessageError);
+                inputWasParsed = int.TryParse(userInput, out parsedInt);
+            }
+
+            return parsedInt;
+        }
+
+        static string GetUserInput(string consoleMessage, string consoleMessageError = "false")
+        {
+            if (consoleMessageError != "false")
+            {
+                Console.WriteLine($"\n{consoleMessageError}\n");
+            }
+            Console.Write($"{consoleMessage}");
 
             return Console.ReadLine();
         }
+
         static double GetTotalGrossSalary(double hourValue, int workedHours, int antiquity)
         {
             return (hourValue * workedHours) + (antiquity * 150);
@@ -117,6 +111,19 @@ namespace Ejercicio_07
             return totalGrossSalary - discount;
         }
 
+        static string GetAnswer(string consoleMessage, string consoleMessageError)
+        {
+            string userInput;
+            userInput = GetUserInput(consoleMessage);
+
+            while (userInput != "si" && userInput != "no")
+            {
+                userInput = GetUserInput(consoleMessage, consoleMessageError);
+            }
+
+            return userInput;
+        }
+
         static void DisplayPaycheck(string name, int antiquity, double hourValue, double totalGrossSalary, double totalNetSalary)
         {
             Console.WriteLine("\n\n##### Recibo de sueldo #####\n");
@@ -125,7 +132,7 @@ namespace Ejercicio_07
             Console.WriteLine($"Valor hora: {hourValue}");
             Console.WriteLine($"Total a cobrar bruto: {totalGrossSalary}");
             Console.WriteLine($"Total a cobrar neto: {totalNetSalary}");
-            Console.WriteLine("\n################################");
+            Console.WriteLine("\n############################\n");
         }
     }
 }
