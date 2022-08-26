@@ -16,7 +16,7 @@ namespace Ejercicio_03
                 userInput = Console.ReadLine();
                 wasParsed = int.TryParse(userInput, out int parsedNum);
 
-                while (userInput != "salir" && !wasParsed)
+                while (userInput != "salir" && !wasParsed || parsedNum < 1)
                 {
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese un numero: ");

@@ -46,7 +46,7 @@ namespace Ejercicio_07
             userInput = GetUserInput(consoleMessage);
             inputWasParsed = double.TryParse(userInput, out double parsedDouble);
 
-            while (!inputWasParsed)
+            while (!inputWasParsed || parsedDouble < 1)
             {
                 userInput = GetUserInput(consoleMessage, consoleMessageError);
                 inputWasParsed = double.TryParse(userInput, out parsedDouble);
@@ -76,7 +76,7 @@ namespace Ejercicio_07
             userInput = GetUserInput(consoleMessage);
             inputWasParsed = int.TryParse(userInput, out int parsedInt);
 
-            while (!inputWasParsed)
+            while (!inputWasParsed || parsedInt < 1)
             {
                 userInput = GetUserInput(consoleMessage, consoleMessageError);
                 inputWasParsed = int.TryParse(userInput, out parsedInt);

@@ -16,7 +16,7 @@ namespace Ejercicio_05
                 userInput = Console.ReadLine();
                 inputWasParsed = int.TryParse(userInput, out int parsedNum);
 
-                while (userInput != "salir" && !inputWasParsed)
+                while (userInput != "salir" && !inputWasParsed || parsedNum < 1)
                 {
                     Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
                     Console.Write("Ingrese un numero: ");
@@ -32,7 +32,7 @@ namespace Ejercicio_05
                 Console.WriteLine("\nNumeros centricos:");
                 for (int i = 1; i <= parsedNum; i++)
                 {
-                    int numberCenter = getNumberCenter(i);
+                    int numberCenter = GetNumberCenter(i);
                     if (numberCenter != -1)
                     {
                         Console.Write(numberCenter + " - ");
@@ -52,7 +52,7 @@ namespace Ejercicio_05
             } while (userAnswer != "no");
         }
 
-        static int getNumberCenter(int number)
+        static int GetNumberCenter(int number)
         {
             int returnValue = -1;
             int previousNumbersSum = 0;

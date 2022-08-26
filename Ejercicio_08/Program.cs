@@ -8,7 +8,7 @@ namespace Ejercicio_08
         {
             int triangleHeight;
             string newRow = "*";
-            
+
             triangleHeight = GetInt("Ingresar altura de triagulo: ", "ERROR. ¡Reingresar altura de triagulo!");
 
             for (int i = 0; i < triangleHeight; i++)
@@ -27,7 +27,7 @@ namespace Ejercicio_08
             userInput = GetUserInput(consoleMessage);
             inputWasParsed = int.TryParse(userInput, out int parsedInt);
 
-            while (!inputWasParsed)
+            while (!inputWasParsed || parsedInt < 1)
             {
                 userInput = GetUserInput(consoleMessage, consoleMessageError);
                 inputWasParsed = int.TryParse(userInput, out parsedInt);

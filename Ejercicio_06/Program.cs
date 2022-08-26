@@ -17,9 +17,9 @@ namespace Ejercicio_06
                 userInput = Console.ReadLine();
                 inputWasParsed = int.TryParse(userInput, out int parsedInitialYear);
 
-                while (userInput != "salir" && !inputWasParsed)
+                while (userInput != "salir" && !inputWasParsed || parsedInitialYear < 1)
                 {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
+                    Console.WriteLine("\n\nERROR. ¡Reingresar año!\n\n");
                     Console.Write("Ingrese año de inicio: ");
                     userInput = Console.ReadLine();
                     inputWasParsed = int.TryParse(userInput, out parsedInitialYear);
@@ -35,9 +35,9 @@ namespace Ejercicio_06
                 userInput = Console.ReadLine();
                 inputWasParsed = int.TryParse(userInput, out int parsedFinalYear);
 
-                while (userInput != "salir" && !inputWasParsed)
+                while (userInput != "salir" && !inputWasParsed || parsedFinalYear < 1 || parsedFinalYear < parsedInitialYear)
                 {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar número!\n\n");
+                    Console.WriteLine("\n\nERROR. ¡Reingresar año!\n\n");
                     Console.Write("Ingrese año de fin: ");
                     userInput = Console.ReadLine();
                     inputWasParsed = int.TryParse(userInput, out parsedFinalYear);
