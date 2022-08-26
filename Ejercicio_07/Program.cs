@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using System.Xml.Linq;
 
 namespace Ejercicio_07
 {
@@ -7,78 +8,29 @@ namespace Ejercicio_07
     {
         static void Main()
         {
-            string nombre;
-            bool inputWasParsed;
+            double parsedHourValue;
+            string name;
+            int parsedAntiquity;
+            int parsedWorkedHours;
             double totalGrossSalary;
             double discount;
             double totalNetSalary;
-            string userInput;
             string userAnswer;
 
             Console.WriteLine("##### SISTEMA RECIBOS #####\n\n");
 
             do
             {
-                Console.Write("Ingrese valor hora: ");
-                userInput = Console.ReadLine();
-                inputWasParsed = double.TryParse(userInput, out double parsedHora);
+                parsedHourValue = GetDouble("valor hora");
+                name = GetString("nombre");
+                parsedAntiquity = GetInt("antigüedad (años)");
+                parsedWorkedHours = GetInt("horas trabajadas");
 
-                while (!inputWasParsed)
-                {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar valor hora!\n\n");
-                    Console.Write("Ingrese valor hora: ");
-                    userInput = Console.ReadLine();
-                    inputWasParsed = double.TryParse(userInput, out parsedHora);
-                }
+                totalGrossSalary = GetTotalGrossSalary(parsedHourValue, parsedWorkedHours, parsedAntiquity);
+                discount = GetDiscount(totalGrossSalary);
+                totalNetSalary = GetTotalNetSalary(totalGrossSalary, discount); 
 
-                Console.Write("Ingrese nombre: ");
-                nombre = Console.ReadLine();
-
-                while (string.IsNullOrEmpty(nombre) || nombre.Any(char.IsDigit))
-                {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar nombre!\n\n");
-                    Console.Write("Ingrese nombre: ");
-                    nombre = Console.ReadLine();
-                }
-
-                Console.Write("Ingrese antigüedad (años): ");
-                userInput = Console.ReadLine();
-                inputWasParsed = int.TryParse(userInput, out int parsedAntigüedad);
-
-                while (!inputWasParsed)
-                {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar antigüedad (años)!\n\n");
-                    Console.Write("Ingrese antigüedad (años): ");
-                    userInput = Console.ReadLine();
-                    inputWasParsed = int.TryParse(userInput, out parsedAntigüedad);
-                }
-
-                Console.Write("Ingrese cantidad horas trabajadas: ");
-                userInput = Console.ReadLine();
-                inputWasParsed = float.TryParse(userInput, out float parsedHorasTrabajadas);
-
-                while (!inputWasParsed)
-                {
-                    Console.WriteLine("\n\nERROR. ¡Reingresar cantidad horas trabajadas!\n\n");
-                    Console.Write("Ingrese cantidad horas trabajadas: ");
-                    userInput = Console.ReadLine();
-                    inputWasParsed = float.TryParse(userInput, out parsedHorasTrabajadas);
-                }
-
-
-
-
-
-                totalGrossSalary = (parsedHora * parsedHorasTrabajadas) + (parsedAntigüedad * 150);
-                discount = totalGrossSalary * 0.13;
-                totalNetSalary = totalGrossSalary - discount;
-
-                Console.WriteLine($"Nombre: {nombre}");
-                Console.WriteLine($"Antigüedad: {parsedAntigüedad}");
-                Console.WriteLine($"Valor hora: {parsedHora}");
-                Console.WriteLine($"Total a cobrar bruto: {totalGrossSalary}");
-                Console.WriteLine($"Total a cobrar neto: {totalNetSalary}");
-
+                DisplayPaycheck(name, parsedAntiquity, parsedHourValue, totalGrossSalary, totalNetSalary);
 
                 Console.Write("\n\nDesea calcular otro recibo? (si/no): ");
                 userAnswer = Console.ReadLine();
@@ -91,6 +43,89 @@ namespace Ejercicio_07
                 }
 
             } while (userAnswer != "no");
+        }
+
+        static string GetString(string consoleMessage)
+        {
+            string userInput;
+            userInput = GetUserInput(consoleMessage);
+
+            while (string.IsNullOrEmpty(userInput) || userInput.Any(char.IsDigit))
+            {
+                userInput = GetUserInput(consoleMessage, true);
+            }
+
+            return userInput;
+        }
+
+        static int GetInt(string consoleMessage)
+        {
+            string userInput;
+            bool inputWasParsed;
+
+            userInput = GetUserInput(consoleMessage);
+            inputWasParsed = int.TryParse(userInput, out int parsedInt);
+
+            while (!inputWasParsed)
+            {
+                userInput = GetUserInput(consoleMessage, true);
+                inputWasParsed = int.TryParse(userInput, out parsedInt);
+            }
+
+            return parsedInt;
+        }
+
+        static double GetDouble(string consoleMessage)
+        {
+            string userInput;
+            bool inputWasParsed;
+
+            userInput = GetUserInput(consoleMessage);
+            inputWasParsed = double.TryParse(userInput, out double parsedDouble);
+
+            while (!inputWasParsed)
+            {
+                userInput = GetUserInput(consoleMessage, true);
+                inputWasParsed = double.TryParse(userInput, out parsedDouble);
+            }
+
+            return parsedDouble;
+        }
+
+        static string GetUserInput(string consoleMessage, bool wasAnError = false)
+        {
+            if (wasAnError)
+            {
+                Console.WriteLine($"\nERROR. ¡Reingresar {consoleMessage}!\n");
+            }
+            Console.Write($"Ingrese {consoleMessage}: ");
+
+            return Console.ReadLine();
+        }
+        static double GetTotalGrossSalary(double hourValue, int workedHours, int antiquity)
+        {
+            return (hourValue * workedHours) + (antiquity * 150);
+        }
+
+        static double GetDiscount(double totalGrossSalary)
+        {
+            return totalGrossSalary * 0.13;
+        }
+
+        static double GetTotalNetSalary(double totalGrossSalary, double discount)
+        {
+            return totalGrossSalary - discount;
+        }
+
+        static void DisplayPaycheck(string name, int antiquity, double hourValue, double totalGrossSalary, double totalNetSalary)
+        {
+            Console.WriteLine("\n\n##### Recibo de sueldo #####\n");
+            Console.WriteLine($"Nombre: {name}");
+            Console.WriteLine($"Antigüedad: {antiquity}");
+            Console.WriteLine($"Valor hora: {hourValue}");
+            Console.WriteLine($"Total a cobrar bruto: {totalGrossSalary}");
+            Console.WriteLine($"Total a cobrar neto: {totalNetSalary}");
+            Console.WriteLine("\n################################");
         }
     }
 }
