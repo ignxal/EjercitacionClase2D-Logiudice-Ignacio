@@ -12,7 +12,6 @@ namespace Ejercicio_09
 
             for (int i = 1; i <= triangleHeight * 2; i += 2)
             {
-
                 for (int k = triangleHeight * 2; k > i; k -= 2)
                 { 
                     Console.Write(" ");
