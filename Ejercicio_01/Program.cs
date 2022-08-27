@@ -12,7 +12,7 @@ namespace Ejercicio_01
             float maxNum = 0;
             float minNum = 0;
             float acumNum = 0;
-            float promNum;
+            float averageNum;
             for (int i = 0; i < totalInputs; i++)
             {
                 Console.WriteLine("Ingrese un numero: ");
@@ -47,11 +47,11 @@ namespace Ejercicio_01
 
             }
 
-            promNum = acumNum / totalInputs;
+            averageNum = acumNum / totalInputs;
 
             Console.WriteLine($"Numero maximo: {maxNum}");
             Console.WriteLine($"Numero minimo: {minNum}");
-            Console.WriteLine($"Promedio: {promNum}");
+            Console.WriteLine($"Promedio: {averageNum}");
 
 
         }
