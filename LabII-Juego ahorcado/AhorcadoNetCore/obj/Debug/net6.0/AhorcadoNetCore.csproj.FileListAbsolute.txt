@@ -1,0 +1,5 @@
+C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.csproj.AssemblyReference.cache
+C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfoInputs.cache
+C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfo.cs
+C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.csproj.CoreCompileInputs.cache
