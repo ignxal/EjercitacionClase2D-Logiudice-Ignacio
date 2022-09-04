@@ -35,11 +35,10 @@ namespace AhorcadoNetCore
 
                     case 2:
                         Logica.MostrarPalabras();
+                        Logica.AgregarPalabraNueva();
                         break;
 
                     case 3:
-
-                        Logica.AgregarPalabraNueva();
                         seguirEnElPrograma = false;
                         break;
                     case 4:
@@ -78,8 +77,6 @@ namespace AhorcadoNetCore
 
         static void OpcionesMenuPrincipal()
         {
-            for (int i = 0; i < 10; i++)
-            {
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Menu Principal:");
 
@@ -92,8 +89,6 @@ namespace AhorcadoNetCore
                 Console.WriteLine("Ingrese la opción deseada");
 
                 Console.ResetColor();
-
-            }
         }
     }
 }

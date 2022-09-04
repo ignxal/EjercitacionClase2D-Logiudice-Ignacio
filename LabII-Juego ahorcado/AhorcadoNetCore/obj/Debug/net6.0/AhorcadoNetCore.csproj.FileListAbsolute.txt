@@ -3,3 +3,18 @@ C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\
 C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfoInputs.cache
 C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfo.cs
 C:\Users\Ismael\Desktop\LabII-Ahorcado-main\LabII-Ahorcado-main\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\bin\Debug\net6.0\AhorcadoNetCore.exe
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\bin\Debug\net6.0\AhorcadoNetCore.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\bin\Debug\net6.0\AhorcadoNetCore.runtimeconfig.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\bin\Debug\net6.0\AhorcadoNetCore.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\bin\Debug\net6.0\AhorcadoNetCore.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\refint\AhorcadoNetCore.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\AhorcadoNetCore.genruntimeconfig.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\LabII-Juego ahorcado\AhorcadoNetCore\obj\Debug\net6.0\ref\AhorcadoNetCore.dll

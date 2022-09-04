@@ -6,8 +6,8 @@ namespace AhorcadoNetCore
     public static class Logica
     {
 
-        public static string[] arrayPalabras = string[15];
-        static vidas
+        public static string[] arrayPalabras = new string[15];
+        static int vidas;
        public static void CargarPalabras()
         {
             arrayPalabras[0] = "PERRO";
