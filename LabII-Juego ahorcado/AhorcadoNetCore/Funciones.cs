@@ -115,7 +115,7 @@ namespace AhorcadoNetCore
 
         }
 
-        private static void MostrarPresionarTecla(string tecla, string msj)
+        private static void MostrarPresionarTecla(string tecla, string mensaje)
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write("\nPresione ");
@@ -125,9 +125,7 @@ namespace AhorcadoNetCore
             Console.ResetColor();
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.Write(mensaje);
-            Console.WriteLine()
-
-
+            Console.WriteLine();
         }
 
 
