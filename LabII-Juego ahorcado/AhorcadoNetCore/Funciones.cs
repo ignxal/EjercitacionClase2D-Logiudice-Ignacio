@@ -67,7 +67,7 @@ namespace AhorcadoNetCore
 
         public static int ValidarEntero(int opcionMin, int opcionMax)
         {
-           bool opcion;
+           int opcion;
 
             while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < opcionMin || opcion > opcionMax)
             {
