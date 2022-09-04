@@ -10,7 +10,7 @@ namespace AhorcadoNetCore
         public static void MenuPrincipal()
         {
             int opcionIngresada;
-            bool reiniciarJuego = true;
+            bool reiniciarJuego;
             bool seguirEnElPrograma = true;
             do
             {
@@ -28,7 +28,6 @@ namespace AhorcadoNetCore
                         do
                         {
                             reiniciarJuego = Logica.ComenzarJuego();
-
                         } while(reiniciarJuego);
 
                         Console.Clear();
