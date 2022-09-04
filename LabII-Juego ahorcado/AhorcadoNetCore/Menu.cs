@@ -27,12 +27,12 @@ namespace AhorcadoNetCore
                     case 1:
                         do
                         {
-                            reiniciarJuego = Logica.comenzarjuego();
+                            reiniciarJuego = Logica.ComenzarJuego();
 
-                        } wh1le(reiniciarJuego);
+                        } while(reiniciarJuego);
 
                         Console.Clear();
-
+                        break;
 
                     case 2:
                         Logica.MostrarPalabras();
