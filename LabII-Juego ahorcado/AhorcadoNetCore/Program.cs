@@ -4,11 +4,10 @@ namespace AhorcadoNetCore
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            CargarPalabras();
-            Menu.MenuPrincipal;
-
+            Logica.CargarPalabras();
+            Menu.MenuPrincipal();
         }
     }
 }
