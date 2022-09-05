@@ -12,6 +12,8 @@ namespace AhorcadoNetCore
             int opcionIngresada;
             bool reiniciarJuego;
             bool seguirEnElPrograma = true;
+            string datoIngresado;
+
             do
             {
                 Console.Clear();
@@ -19,7 +21,7 @@ namespace AhorcadoNetCore
 
                 OpcionesMenuPrincipal();
 
-                opcionIngresada = Funciones.ValidarEntero(1, 5);
+                opcionIngresada = Funciones.ValidarEntero(1, 4);
                 Console.Clear();
 
                 switch (opcionIngresada)
@@ -32,21 +34,16 @@ namespace AhorcadoNetCore
 
                         Console.Clear();
                         break;
-
                     case 2:
                         Logica.MostrarPalabras();
-                        Logica.AgregarPalabraNueva();
+                        datoIngresado = Logica.IngresarPalabraNueva();
+                        Logica.AgregarPalabraNueva(datoIngresado);
                         break;
-
                     case 3:
-                        seguirEnElPrograma = false;
+                        Logica.MostrarPalabras();
+                        Logica.EliminarPalabra();
                         break;
                     case 4:
-                        Logica.EliminarPalabra();
-                        seguirEnElPrograma = false;
-                        break;
-                    case 5:
-
                         seguirEnElPrograma = false;
                         break;
                 }
@@ -83,7 +80,8 @@ namespace AhorcadoNetCore
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("1. Iniciar Juego");
                 Console.WriteLine("2. Agregar Palabra Nueva");
-                Console.WriteLine("3. Salir");
+                Console.WriteLine("3. Eliminar palabra");
+                Console.WriteLine("4. Salir");
 
                 Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine("Ingrese la opción deseada");

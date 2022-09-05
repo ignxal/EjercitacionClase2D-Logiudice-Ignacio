@@ -11,36 +11,28 @@ namespace AhorcadoNetCore
        public static void CargarPalabras()
         {
             arrayPalabras[0] = "PERRO";
-            arrayPalabras[0] = "GATO";
-            arrayPalabras[0] = "CABALLO";
-            arrayPalabras[0] = "VACACIONES";
-            arrayPalabras[0] = "APROBAR";
-            arrayPalabras[0] = "GUITARRA";
-            arrayPalabras[0] = "ESTUDIAR";
-            arrayPalabras[0] = "ANIVERSARIO";
-            arrayPalabras[0] = "COMPUTADORA";
-
+            arrayPalabras[1] = "GATO";
+            arrayPalabras[2] = "CABALLO";
+            arrayPalabras[3] = "VACACIONES";
+            arrayPalabras[4] = "APROBAR";
+            arrayPalabras[5] = "GUITARRA";
+            arrayPalabras[6] = "ESTUDIAR";
+            arrayPalabras[7] = "ANIVERSARIO";
+            arrayPalabras[8] = "COMPUTADORA";
         }
 
 
-        public static void AgregarPalabraNueva()
+        public static void AgregarPalabraNueva(string datoIngresado)
         {
-            string datoIngresado;
-            Console.WriteLine("Ingrese nueva palabra");
-            datoIngresado = Console.ReadLine().ToUpper().Trim();
-            while (!Funciones.ValidarSiPalabraEsValida(datoIngresado))
-            {
-                datoIngresado = Console.ReadLine().ToUpper().Trim();
-            }
+            int indice;
 
-            int indice = Funciones.RetornarIndiceEspacioDisponible(arrayPalabras);
+            indice = Funciones.RetornarIndiceEspacioDisponible(arrayPalabras);
             if (indice != -1)
             {
                 arrayPalabras[indice] = datoIngresado;
                 Console.WriteLine("Nueva palabra agregada");
                 Funciones.PresioneUnaTeclaParaContinuar();
             }
-
         }
 
 
@@ -189,12 +181,12 @@ namespace AhorcadoNetCore
 
         public static string IngresarPalabraNueva()
         {
+            Console.WriteLine("\nIngrese nueva palabra");
             string nuevaPalabra = Console.ReadLine();
 
             while (!Funciones.ValidarSiPalabraEsValida(nuevaPalabra))
             {
-                Console.WriteLine("La palabra debe contener SOLO letras y numeros");
-                Console.Write("Ingresar una letra");
+                Console.WriteLine("La palabra debe contener SOLO letras");
                 nuevaPalabra = Console.ReadLine();
             }
 
@@ -202,16 +194,34 @@ namespace AhorcadoNetCore
         }
 
 
-        public static void MostrarPalabras()  //desarrollar
+        public static void MostrarPalabras()
         {
+            Menu.DibujarEncabezado("Palabras cargadas actualmente");
+            Console.ForegroundColor = ConsoleColor.Yellow;
 
+            for (int i = 0; i < arrayPalabras.Length; i++)
+            {
+                if (string.IsNullOrEmpty(arrayPalabras[i]))
+                {
+                    break;
+                } 
 
+                Console.WriteLine($"{i}. {arrayPalabras[i]}");
+            }
         }
 
-        public static void EliminarPalabra()  //desarrollar
+        public static void EliminarPalabra()
         {
+            int max = arrayPalabras.Length - 1;
+            Console.Write("Ingresa el indice de la palabra a eliminar: ");
 
+            int indiceDePalabraABorrar = Funciones.ValidarEntero(0, max);
+            string palabraBorrada = arrayPalabras[indiceDePalabraABorrar];
 
+            arrayPalabras = arrayPalabras.Where((palabra, indice) => indice != indiceDePalabraABorrar).ToArray();
+
+            Console.WriteLine($"La palabra {palabraBorrada} fue borrada exitosamente");
+            Funciones.PresioneUnaTeclaParaContinuar();
         }
     }
 }

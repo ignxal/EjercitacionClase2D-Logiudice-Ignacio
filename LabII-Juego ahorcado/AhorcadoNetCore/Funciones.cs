@@ -64,7 +64,6 @@ namespace AhorcadoNetCore
             return letr.ToString().ToUpper();
         }
 
-
         public static int ValidarEntero(int opcionMin, int opcionMax)
         {
            int opcion;
@@ -143,7 +142,5 @@ namespace AhorcadoNetCore
         {
             return Console.ReadKey(true).KeyChar.ToString();
         }
-
-
     }
 }
