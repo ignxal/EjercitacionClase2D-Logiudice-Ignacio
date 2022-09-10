@@ -1,0 +1,16 @@
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.exe
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.runtimeconfig.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.runtimeconfig.dev.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\bin\Debug\net5.0\MaquinaExpendedora.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\refint\MaquinaExpendedora.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\MaquinaExpendedora.genruntimeconfig.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\MaquinaExpendedora\MaquinaExpendedora\obj\Debug\net5.0\ref\MaquinaExpendedora.dll
