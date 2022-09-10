@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace MaquinaExpendedora
 {
@@ -12,6 +13,15 @@ namespace MaquinaExpendedora
             int keyProduct;
             bool productRemoved = false;
             Dictionary<int, Stack<Product>> vendingMachine = new();
+            int clientsThatLeft;
+
+            Queue<string> clientsQueue = new();
+            string[] clientsName = new[] { "Lucas", "Nacho", "Esteban", "El capitan Beto", "El pibe de los astilleros" };
+
+            for (int i = 0; i < clientsName.Length; i++)
+            {
+                clientsQueue.Enqueue(clientsName[i]);
+            }
 
             Stack<Product> chocolates = new();
             string[] chocolatesName = new[] { "Milka", "Aguila", "Tofi", "Cadbury", "Block"};
@@ -46,36 +56,63 @@ namespace MaquinaExpendedora
 
             do
             {
+                clientsThatLeft = 0;
                 Console.Clear();
-                DisplayOptions(vendingMachine);
 
-                do
+                foreach (var client in clientsQueue)
                 {
-                    keyProduct = GetInt("Ingrese clave del producto que desea retirar: ", "ERROR! Valor ingresado invalido");
-                    if (!vendingMachine.ContainsKey(keyProduct))
+                    productRemoved = false;
+
+                    Console.WriteLine($"\n--------------------------------------------------------------------------------------------------");
+                    Console.WriteLine($"Se esta atendiendo al cliente: {client}\nTamaño de la fila: {clientsQueue.Count - clientsThatLeft}");
+                    Console.WriteLine($"--------------------------------------------------------------------------------------------------\n");
+                    DisplayOptions(vendingMachine);
+
+                    do
                     {
-                        Console.WriteLine("\nERROR. Clave invalida\n");
-                        continue;
-                    }
+                        keyProduct = GetInt("\nIngrese clave del producto que desea retirar: ", "ERROR! Valor ingresado invalido");
 
-                    Product chosenProduct = vendingMachine[keyProduct].Pop();
-                    Console.WriteLine($"Se selecciono el producto: {chosenProduct.Name} - {chosenProduct.Price} | Codigo: {chosenProduct.Code}");
-                    productRemoved = true;
+                        if (!vendingMachine.ContainsKey(keyProduct))
+                        {
+                            Console.WriteLine("\nERROR. Clave invalida\n");
+                            continue;
+                        }
 
-                    if(vendingMachine[keyProduct].Count == 0)
+                        Product chosenProduct = vendingMachine[keyProduct].Pop();
+                        Console.WriteLine($"Se lleva el producto: {chosenProduct.Name} - {chosenProduct.Price} | Codigo: {chosenProduct.Code}");
+                        productRemoved = true;
+
+                        if(vendingMachine[keyProduct].Count == 0)
+                        {
+                            vendingMachine.Remove(keyProduct);
+                        }
+
+                    } while (!productRemoved);
+
+                    clientsThatLeft++;
+                }
+                clientsQueue.Clear();
+
+                userAnswer = GetAnswer("¿Desea agregar mas clientes? (S/N)", "ERROR. ¡Reingresar respuesta!");
+                if(userAnswer == "S")
+                {
+                    int amountClientsToAdd = GetInt("Ingrese cantidad clientes a agregar: ", "ERROR! Valor ingresado invalido");
+
+                    Console.Clear();
+
+                    for (int i = 0; i < amountClientsToAdd; i++)
                     {
-                        vendingMachine.Remove(keyProduct);
+                        string newClientName = GetString("Ingrese nombre de cliente a agregar: ", "ERROR! Valor ingresado invalido");
+                        clientsQueue.Enqueue(newClientName);
                     }
+                }
 
-                } while (!productRemoved);
-                userAnswer = GetAnswer("¿Desea salir? (S/N)", "ERROR. ¡Reingresar respuesta!");
-            } while (userAnswer != "S");
-
+            } while (userAnswer == "S");
         }
 
         public static void DisplayOptions(Dictionary<int, Stack<Product>> dict)
         {
-            Console.Write("***** Maquina Expendedora *****\n");
+            Console.WriteLine("***** Productos *****\n");
             foreach (KeyValuePair<int, Stack<Product>> feature in dict)
             {
                 Console.WriteLine($"Clave: {feature.Key} - Codigo: {feature.Value.Peek().Code} - Nombre: {feature.Value.Peek().Name} - Precio: {feature.Value.Peek().Price} - Cantidad: {feature.Value.Count}");
@@ -116,6 +153,19 @@ namespace MaquinaExpendedora
             userInput = GetUserInput(consoleMessage);
 
             while (userInput != "S" && userInput != "N")
+            {
+                userInput = GetUserInput(consoleMessage, consoleMessageError);
+            }
+
+            return userInput;
+        }
+
+        static string GetString(string consoleMessage, string consoleMessageError)
+        {
+            string userInput;
+            userInput = GetUserInput(consoleMessage);
+
+            while (string.IsNullOrEmpty(userInput) || userInput.Any(char.IsDigit))
             {
                 userInput = GetUserInput(consoleMessage, consoleMessageError);
             }
