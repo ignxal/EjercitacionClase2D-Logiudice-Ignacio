@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security;
 
 namespace MaquinaExpendedora
 {
@@ -9,113 +10,103 @@ namespace MaquinaExpendedora
     {
         static void Main()
         {
-            string userAnswer;
-            int keyProduct;
-            bool productRemoved = false;
-            Dictionary<int, Stack<Product>> vendingMachine = new();
-            int clientsThatLeft;
+            string userAnswer = "N";
+            int indexProduct;
+            int queueLength;
+            double totalPrice = 0;
+            List<Product> buffetTable = new();
+            List<Product> currentClientMenu = new();
 
             Queue<string> clientsQueue = new();
             string[] clientsName = new[] { "Lucas", "Nacho", "Esteban", "El capitan Beto", "El pibe de los astilleros" };
+
+            string[] chocolatesName = new[] { "Milka", "Aguila", "Tofi", "Cadbury", "Block" };
+            double[] chocolatesPrice = new[] { 25.50, 30, 20, 15, 40.30 };
+
+            string[] refreshmentsName = new[] { "Coca", "Sprite", "Fanta", "Aquarius", "Schweppes" };
+            double[] refreshmentsPrice = new[] { 20.50, 20, 20, 15, 21.30 };
+
+            string[] snacksName = new[] { "Lays", "Doritos", "Cheetos", "Pep", "3D" };
+            double[] snacksPrice = new[] { 50.50, 50, 50, 45, 40.40 };
 
             for (int i = 0; i < clientsName.Length; i++)
             {
                 clientsQueue.Enqueue(clientsName[i]);
             }
 
-            Stack<Product> chocolates = new();
-            string[] chocolatesName = new[] { "Milka", "Aguila", "Tofi", "Cadbury", "Block"};
-            double[] chocolatesPrice = new[] { 25.50, 30, 20, 15, 40.30 };
-
             for (int i = 0; i < chocolatesName.Length; i++)
             {
-                chocolates.Push(new Product(chocolatesName[i], chocolatesPrice[i]));
+                buffetTable.Add(new Product(chocolatesName[i], chocolatesPrice[i], 10));
             }
-
-            Stack<Product> refreshments = new();
-            string[] refreshmentsName = new[] { "Coca", "Sprite", "Fanta", "Aquarius", "Schweppes" };
-            double[] refreshmentsPrice = new[] { 20.50, 20, 20, 15, 21.30 };
 
             for (int i = 0; i < refreshmentsName.Length; i++)
             {
-                refreshments.Push(new Product(refreshmentsName[i], refreshmentsPrice[i]));
+                buffetTable.Add(new Product(refreshmentsName[i], refreshmentsPrice[i], 10));
             }
-
-            Stack<Product> snacks = new();
-            string[] snacksName = new[] { "Lays", "Doritos", "Cheetos", "Pep", "3D" };
-            double[] snacksPrice = new[] { 50.50, 50, 50, 45, 40.40 };
 
             for (int i = 0; i < snacksName.Length; i++)
             {
-                snacks.Push(new Product(snacksName[i], snacksPrice[i]));
+                buffetTable.Add(new Product(snacksName[i], snacksPrice[i], 10));
             }
 
-            vendingMachine.Add(1, chocolates);
-            vendingMachine.Add(2, refreshments);
-            vendingMachine.Add(3, snacks);
+            queueLength = clientsQueue.Count;
 
-            do
+            for (int i = 0; i < queueLength; i++)
             {
-                clientsThatLeft = 0;
-                Console.Clear();
+                Console.WriteLine($"\n--------------------------------------------------------------------------------------------------");
+                Console.WriteLine($"Se esta atendiendo al cliente: {clientsQueue.Peek()}\nTamaño de la fila: {clientsQueue.Count}");
+                Console.WriteLine($"--------------------------------------------------------------------------------------------------\n");
+                DisplayOptions(buffetTable);
 
-                foreach (var client in clientsQueue)
+                do
                 {
-                    productRemoved = false;
+                    indexProduct = GetInt("\nIngrese indice del producto que desea comprar: ", "ERROR! Valor ingresado invalido");
 
-                    Console.WriteLine($"\n--------------------------------------------------------------------------------------------------");
-                    Console.WriteLine($"Se esta atendiendo al cliente: {client}\nTamaño de la fila: {clientsQueue.Count - clientsThatLeft}");
-                    Console.WriteLine($"--------------------------------------------------------------------------------------------------\n");
-                    DisplayOptions(vendingMachine);
-
-                    do
+                    if (!buffetTable.Contains(buffetTable[indexProduct]))
                     {
-                        keyProduct = GetInt("\nIngrese clave del producto que desea retirar: ", "ERROR! Valor ingresado invalido");
-
-                        if (!vendingMachine.ContainsKey(keyProduct))
-                        {
-                            Console.WriteLine("\nERROR. Clave invalida\n");
-                            continue;
-                        }
-
-                        Product chosenProduct = vendingMachine[keyProduct].Pop();
-                        Console.WriteLine($"Se lleva el producto: {chosenProduct.Name} - {chosenProduct.Price} | Codigo: {chosenProduct.Code}");
-                        productRemoved = true;
-
-                        if(vendingMachine[keyProduct].Count == 0)
-                        {
-                            vendingMachine.Remove(keyProduct);
-                        }
-
-                    } while (!productRemoved);
-
-                    clientsThatLeft++;
-                }
-                clientsQueue.Clear();
-
-                userAnswer = GetAnswer("¿Desea agregar mas clientes? (S/N)", "ERROR. ¡Reingresar respuesta!");
-                if(userAnswer == "S")
-                {
-                    int amountClientsToAdd = GetInt("Ingrese cantidad clientes a agregar: ", "ERROR! Valor ingresado invalido");
-
-                    Console.Clear();
-
-                    for (int i = 0; i < amountClientsToAdd; i++)
-                    {
-                        string newClientName = GetString("Ingrese nombre de cliente a agregar: ", "ERROR! Valor ingresado invalido");
-                        clientsQueue.Enqueue(newClientName);
+                        Console.WriteLine("\nERROR. Clave invalida\n");
+                        continue;
                     }
-                }
 
-            } while (userAnswer == "S");
+                    Product chosenProduct = buffetTable[indexProduct];
+                    chosenProduct.Amount--;
+                    currentClientMenu.Add(chosenProduct);
+
+                    Console.WriteLine("\n************ Productos seleccionados ************");
+                    foreach (var prod in currentClientMenu)
+                    {
+                        Console.WriteLine($"{prod.Name} - ${prod.Price}");
+                        totalPrice += prod.Price;
+                    }
+                    Console.WriteLine($"Total a pagar: ${totalPrice}");
+
+
+                    if (chosenProduct.Amount == 0)
+                    {
+                        buffetTable.Remove(chosenProduct);
+                    }
+
+                    userAnswer = GetAnswer("\n¿Desea agregar otro plato? (S/N)", "ERROR. ¡Reingresar respuesta!");
+
+                    if (userAnswer == "N")
+                    {
+                        currentClientMenu.Clear();
+                        totalPrice = 0;
+                        Console.Clear();
+                    }
+
+                } while (userAnswer == "S");
+                clientsQueue.Dequeue();
+            }
+            clientsQueue.Clear();
         }
 
-        public static void DisplayOptions(Dictionary<int, Stack<Product>> dict)
+        public static void DisplayOptions(List<Product> list)
         {
             Console.WriteLine("***** Productos *****\n");
-            foreach (KeyValuePair<int, Stack<Product>> feature in dict)
+            foreach (Product feature in list)
             {
-                Console.WriteLine($"Clave: {feature.Key} - Codigo: {feature.Value.Peek().Code} - Nombre: {feature.Value.Peek().Name} - Precio: {feature.Value.Peek().Price} - Cantidad: {feature.Value.Count}");
+                Console.WriteLine($"{list.IndexOf(feature)} - Nombre: {feature.Name} - Precio: ${feature.Price} - Cantidad: {feature.Amount}");
             }
         }
 
