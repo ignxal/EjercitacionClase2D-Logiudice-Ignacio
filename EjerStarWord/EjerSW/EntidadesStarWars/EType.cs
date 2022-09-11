@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntidadesStarWars
 {
-    public enum ETipo
+    public enum EType
     {
         Sand,
         Assault,

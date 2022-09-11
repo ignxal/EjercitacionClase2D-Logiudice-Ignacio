@@ -9,11 +9,11 @@ namespace EntidadesStarWars
         private Blaster armament;
         private string description;
         private bool isClon;
-        private ETipo type;
+        private EType type;
 
         public Trooper(Blaster armament)
         {
-            if(this.Type is not ETipo.Explorer)
+            if(this.Type is not EType.Explorer)
             {
                 this.armament = armament;
             }
@@ -22,7 +22,7 @@ namespace EntidadesStarWars
                 this.armament = Blaster.DLT19;
             }
 
-            if (this.Type is not ETipo.Sand)
+            if (this.Type is not EType.Sand)
             {
                 this.isClon = false;
             }
@@ -35,7 +35,7 @@ namespace EntidadesStarWars
 
         public Trooper(Blaster armament, bool isClon)
         {
-            if (this.Type is not ETipo.Explorer)
+            if (this.Type is not EType.Explorer)
             {
                 this.armament = armament;
             }
@@ -44,7 +44,7 @@ namespace EntidadesStarWars
                 this.armament = Blaster.DLT19;
             }
 
-            if (this.Type is not ETipo.Sand)
+            if (this.Type is not EType.Sand)
             {
                 this.isClon = isClon;
             }
@@ -57,7 +57,7 @@ namespace EntidadesStarWars
 
         public Blaster Armament { get => armament; }
         public bool IsClon { get => isClon; set => isClon = value; }
-        public ETipo Type { get => type; set => type = value; }
+        public EType Type { get => type; set => type = value; }
 
         public string InfoTrooper()
         {
@@ -66,13 +66,13 @@ namespace EntidadesStarWars
             return $"{LoadDescription(this.Type)}, armado con {this.Armament}, {isClon} es clon.";
         }
 
-        public string LoadDescription(ETipo type)
+        public string LoadDescription(EType type)
         {
             return type switch
             {
-                ETipo.Sand => "Soldado de asalto de terrenos desérticos",
-                ETipo.Assault => "Comando para misiones de infiltracion",
-                ETipo.Explorer => "Soldado de exploracion",
+                EType.Sand => "Soldado de asalto de terrenos desérticos",
+                EType.Assault => "Comando para misiones de infiltracion",
+                EType.Explorer => "Soldado de exploracion",
                 _ => "ERROR. Tipo invalido",
             };
         }
