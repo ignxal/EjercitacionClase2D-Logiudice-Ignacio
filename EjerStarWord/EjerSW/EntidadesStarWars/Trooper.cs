@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using System.Text; 
 
 namespace EntidadesStarWars
@@ -10,9 +11,9 @@ namespace EntidadesStarWars
         private bool isClon;
         private ETipo type;
 
-        public Trooper(Blaster armament, string description, ETipo type, bool isClon = false)
+        public Trooper(Blaster armament)
         {
-            if(type is not ETipo.Explorer)
+            if(this.Type is not ETipo.Explorer)
             {
                 this.armament = armament;
             }
@@ -21,27 +22,48 @@ namespace EntidadesStarWars
                 this.armament = Blaster.DLT19;
             }
 
-            this.description = description;
-            this.type = type;
+            if (this.Type is not ETipo.Sand)
+            {
+                this.isClon = false;
+            }
+            else
+            {
+                this.isClon = true;
+            }
+            
+        }
 
-            if(type is not ETipo.Sand)
+        public Trooper(Blaster armament, bool isClon)
+        {
+            if (this.Type is not ETipo.Explorer)
+            {
+                this.armament = armament;
+            }
+            else
+            {
+                this.armament = Blaster.DLT19;
+            }
+
+            if (this.Type is not ETipo.Sand)
             {
                 this.isClon = isClon;
             }
             else
             {
-                this.isClon = false;
+                this.isClon = true;
             }
-            
+
         }
 
         public Blaster Armament { get => armament; }
         public bool IsClon { get => isClon; set => isClon = value; }
-        public ETipo Tipo { get => type; set => type = value; }
+        public ETipo Type { get => type; set => type = value; }
 
         public string InfoTrooper()
         {
-            return description;
+            string isClon = this.isClon ? "SI" : "NO";
+
+            return $"{LoadDescription(this.Type)}, armado con {this.Armament}, {isClon} es clon.";
         }
 
         public string LoadDescription(ETipo type)
@@ -51,8 +73,9 @@ namespace EntidadesStarWars
                 ETipo.Sand => "Soldado de asalto de terrenos desérticos",
                 ETipo.Assault => "Comando para misiones de infiltracion",
                 ETipo.Explorer => "Soldado de exploracion",
-                _ => "Se produjo un error",
+                _ => "ERROR. Tipo invalido",
             };
         }
+
     }
 }
