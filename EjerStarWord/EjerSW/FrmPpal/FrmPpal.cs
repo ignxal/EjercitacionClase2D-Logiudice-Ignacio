@@ -19,6 +19,16 @@ namespace FrmPpal
         {
             
             InitializeComponent();
+
+            foreach (var type in Enum.GetNames(typeof(EType)))
+            {
+                cmbTipo.Items.Add(type);
+            }
+
+            foreach (var armament in Enum.GetNames(typeof(Blaster)))
+            {
+                cmbBlaster.Items.Add(armament);
+            }
         }
        
         private void FrmPpal_Load(object sender, EventArgs e)
@@ -28,7 +38,6 @@ namespace FrmPpal
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            
            
         }
 

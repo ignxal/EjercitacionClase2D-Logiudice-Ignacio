@@ -46,18 +46,18 @@ namespace FrmPpal
             // 
             this.cmbTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbTipo.FormattingEnabled = true;
-            this.cmbTipo.Location = new System.Drawing.Point(21, 22);
+            this.cmbTipo.Location = new System.Drawing.Point(21, 43);
             this.cmbTipo.Name = "cmbTipo";
-            this.cmbTipo.Size = new System.Drawing.Size(121, 23);
+            this.cmbTipo.Size = new System.Drawing.Size(210, 23);
             this.cmbTipo.TabIndex = 0;
             this.cmbTipo.SelectedIndexChanged += new System.EventHandler(this.cmbTipo_SelectedIndexChanged);
             // 
             // btnAgregar
             // 
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.Location = new System.Drawing.Point(12, 332);
+            this.btnAgregar.Location = new System.Drawing.Point(12, 302);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(135, 41);
+            this.btnAgregar.Size = new System.Drawing.Size(219, 41);
             this.btnAgregar.TabIndex = 1;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -66,9 +66,9 @@ namespace FrmPpal
             // btnQuitar
             // 
             this.btnQuitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnQuitar.Location = new System.Drawing.Point(12, 379);
+            this.btnQuitar.Location = new System.Drawing.Point(12, 362);
             this.btnQuitar.Name = "btnQuitar";
-            this.btnQuitar.Size = new System.Drawing.Size(135, 34);
+            this.btnQuitar.Size = new System.Drawing.Size(219, 44);
             this.btnQuitar.TabIndex = 2;
             this.btnQuitar.Text = "Quitar";
             this.btnQuitar.UseVisualStyleBackColor = true;
@@ -84,15 +84,15 @@ namespace FrmPpal
             this.lstEjercito.ForeColor = System.Drawing.Color.IndianRed;
             this.lstEjercito.FormattingEnabled = true;
             this.lstEjercito.ItemHeight = 20;
-            this.lstEjercito.Location = new System.Drawing.Point(176, 154);
+            this.lstEjercito.Location = new System.Drawing.Point(265, 22);
             this.lstEjercito.Name = "lstEjercito";
-            this.lstEjercito.Size = new System.Drawing.Size(624, 244);
+            this.lstEjercito.Size = new System.Drawing.Size(524, 384);
             this.lstEjercito.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 4);
+            this.label1.Location = new System.Drawing.Point(21, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 15);
             this.label1.TabIndex = 4;
@@ -101,7 +101,7 @@ namespace FrmPpal
             // ckbClon
             // 
             this.ckbClon.AutoSize = true;
-            this.ckbClon.Location = new System.Drawing.Point(48, 295);
+            this.ckbClon.Location = new System.Drawing.Point(96, 277);
             this.ckbClon.Name = "ckbClon";
             this.ckbClon.Size = new System.Drawing.Size(51, 19);
             this.ckbClon.TabIndex = 5;
@@ -114,7 +114,7 @@ namespace FrmPpal
             this.cmbBlaster.FormattingEnabled = true;
             this.cmbBlaster.Location = new System.Drawing.Point(21, 101);
             this.cmbBlaster.Name = "cmbBlaster";
-            this.cmbBlaster.Size = new System.Drawing.Size(121, 23);
+            this.cmbBlaster.Size = new System.Drawing.Size(210, 23);
             this.cmbBlaster.TabIndex = 6;
             // 
             // lblBlaster
@@ -128,7 +128,7 @@ namespace FrmPpal
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(12, 160);
+            this.pictureBox1.Location = new System.Drawing.Point(58, 142);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 129);
             this.pictureBox1.TabIndex = 8;

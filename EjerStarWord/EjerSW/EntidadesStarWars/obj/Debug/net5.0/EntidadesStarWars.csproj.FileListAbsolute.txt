@@ -22,3 +22,15 @@ D:\PrograYLaboII\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\Entidade
 D:\PrograYLaboII\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\refint\EntidadesStarWars.dll
 D:\PrograYLaboII\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.pdb
 D:\PrograYLaboII\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\ref\EntidadesStarWars.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\bin\Debug\net5.0\EntidadesStarWars.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\bin\Debug\net5.0\EntidadesStarWars.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\bin\Debug\net5.0\EntidadesStarWars.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\refint\EntidadesStarWars.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\EntidadesStarWars.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\EntidadesStarWars\obj\Debug\net5.0\ref\EntidadesStarWars.dll
