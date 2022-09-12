@@ -128,6 +128,7 @@ namespace FrmPpal
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::FrmPpal.Properties.Resources.stormtrooper;
             this.pictureBox1.Location = new System.Drawing.Point(58, 142);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(130, 129);
