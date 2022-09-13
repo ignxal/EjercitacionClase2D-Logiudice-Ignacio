@@ -64,3 +64,4 @@ C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\Ej
 C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\FrmPpal\obj\Debug\net5.0-windows\FrmPpal.pdb
 C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\FrmPpal\obj\Debug\net5.0-windows\FrmPpal.genruntimeconfig.cache
 C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\FrmPpal\obj\Debug\net5.0-windows\ref\FrmPpal.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjerStarWord\EjerSW\FrmPpal\bin\Debug\net5.0-windows\Resources\imperial_march.wav

@@ -8,25 +8,35 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using EntidadesStarWars;
-using System.Media; 
+using System.Media;
+using System.Numerics;
+using FrmPpal.Properties;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Reflection.Emit;
 
 namespace FrmPpal
 {
     public partial class FrmPpal : Form
     {
         ImperialArmy army;
+        SoundPlayer player;
 
         public FrmPpal()
-        {  
-            InitializeComponent();
+        {
+            string path = AppDomain.CurrentDomain.BaseDirectory + @"Resources\imperial_march.wav";
+
+        Trooper trooper = new(Blaster.EC17);
             army = new(100);
-            Trooper trooper = new(Blaster.EC17);
+            player = new SoundPlayer(path);
 
             army.AddTrooper(trooper);
+            InitializeComponent();
         }
        
         private void FrmPpal_Load(object sender, EventArgs e)
         {
+            player.Play();
+
             foreach (var type in Enum.GetNames(typeof(EType)))
             {
                 cmbTipo.Items.Add(type);
