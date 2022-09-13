@@ -14,12 +14,19 @@ namespace FrmPpal
 {
     public partial class FrmPpal : Form
     {
-        
-        public FrmPpal()
-        {
-            
-            InitializeComponent();
+        ImperialArmy army;
 
+        public FrmPpal()
+        {  
+            InitializeComponent();
+            army = new(100);
+            Trooper trooper = new(Blaster.EC17);
+
+            army.AddTrooper(trooper);
+        }
+       
+        private void FrmPpal_Load(object sender, EventArgs e)
+        {
             foreach (var type in Enum.GetNames(typeof(EType)))
             {
                 cmbTipo.Items.Add(type);
@@ -29,14 +36,6 @@ namespace FrmPpal
             {
                 cmbBlaster.Items.Add(armament);
             }
-
-            // ImperialArmy army = new(); ??? private
-
-        }
-       
-        private void FrmPpal_Load(object sender, EventArgs e)
-        {
-            
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -46,13 +45,29 @@ namespace FrmPpal
                 return;
             }
 
-            string tipoValue = cmbTipo.SelectedItem.ToString();
+            string typeValue = cmbTipo.SelectedItem.ToString();
             bool isClonValue = ckbClon.Checked;
-            Blaster blasterValue = (Blaster)cmbBlaster.SelectedItem;
-            
-            Trooper trooper = new(blasterValue, isClonValue);
+            Blaster blasterValue;
+            Trooper trooper;
 
-            //army.AddTrooper(trooper); ??? no context ofc
+            if (typeValue == "Sand")
+            {
+                blasterValue = Blaster.EC17;
+            }
+            else if (typeValue == "Assault")
+            {
+                blasterValue = Blaster.E11;
+            }
+            else
+            {
+                blasterValue = Blaster.DLT19;
+            }
+
+            //Blaster blasterValue = (Blaster)cmbBlaster.SelectedItem; // Error en tiempo de ejecucion
+            
+            trooper = new(blasterValue, isClonValue);
+
+            army.AddTrooper(trooper);
 
             RefrescarEjercito();
         }
@@ -69,16 +84,38 @@ namespace FrmPpal
                 return;
             }
 
+            string typeValue = cmbTipo.SelectedItem.ToString();
+            bool isClonValue = ckbClon.Checked;
+            Blaster blasterValue;
+            Trooper trooper;
+
+            if (typeValue == "Sand")
+            {
+                blasterValue = Blaster.EC17;
+            }
+            else if (typeValue == "Assault")
+            {
+                blasterValue = Blaster.E11;
+            }
+            else
+            {
+                blasterValue = Blaster.DLT19;
+            }
+
+
+            trooper = new(blasterValue);
+
+            army.DeleteTrooper(trooper);
             RefrescarEjercito();
         }
         private void RefrescarEjercito()
         {
             lstEjercito.Items.Clear();
-
-            //List<Trooper> troopers = ImperialArmy.Troopers.ForEach(a){ return a; };
-
-            //string v = Trooper.InfoTrooper();
-
+            
+            foreach (Trooper troop in army.Troopers)
+            {
+                lstEjercito.Items.Add(troop.InfoTrooper());
+            }
         }
     }
 }
