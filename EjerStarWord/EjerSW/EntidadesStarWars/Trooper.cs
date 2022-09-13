@@ -13,46 +13,14 @@ namespace EntidadesStarWars
 
         public Trooper(Blaster armament)
         {
-            if(this.Type is not EType.Explorer)
-            {
-                this.armament = armament;
-            }
-            else
-            {
-                this.armament = Blaster.DLT19;
-            }
-
-            if (this.Type is not EType.Sand)
-            {
-                this.isClon = false;
-            }
-            else
-            {
-                this.isClon = true;
-            }
-            
+            this.armament = this.Type is not EType.Explorer ? armament : Blaster.DLT19;
+            this.description = LoadDescription(this.Type);
+            this.isClon = this.Type is not EType.Sand ? false : true;
         }
 
-        public Trooper(Blaster armament, bool isClon)
+        public Trooper(Blaster armament, bool isClon):this(armament)
         {
-            if (this.Type is not EType.Explorer)
-            {
-                this.armament = armament;
-            }
-            else
-            {
-                this.armament = Blaster.DLT19;
-            }
-
-            if (this.Type is not EType.Sand)
-            {
-                this.isClon = isClon;
-            }
-            else
-            {
-                this.isClon = true;
-            }
-
+            this.isClon = this.Type is not EType.Sand ? isClon : true;
         }
 
         public Blaster Armament { get => armament; }
@@ -61,9 +29,9 @@ namespace EntidadesStarWars
 
         public string InfoTrooper()
         {
-            string isClon = this.isClon ? "SI" : "NO";
+            string isClon = this.IsClon ? "SI" : "NO";
 
-            return $"{LoadDescription(this.Type)}, armado con {this.Armament}, {isClon} es clon.";
+            return $"{this.description}, armado con {this.Armament}, {isClon} es clon.";
         }
 
         public string LoadDescription(EType type)

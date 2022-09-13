@@ -15,17 +15,17 @@ namespace EntidadesStarWars
 
         private ImperialArmy()
         {
-            List<Trooper> troopers = new();
+            troopers = new();
         }
 
-        public ImperialArmy(int capability)
+        public ImperialArmy(int capability):this()
         {
             this.capability = capability;
         }
 
         public bool AddTrooper(Trooper soldier)
         {
-            if(this.Troopers.Count < this.Troopers.Capacity)
+            if(this.troopers.Count < this.capability)
             {
                 this.Troopers.Add(soldier);
                 return true;
@@ -37,6 +37,12 @@ namespace EntidadesStarWars
         public bool DeleteTrooper(Trooper soldier)
         {
             Trooper trooperToRemove = this.Troopers.Find(x => x.Type == soldier.Type);
+
+            if(trooperToRemove is null)
+            {
+                return false;
+            }
+
             return this.Troopers.Remove(trooperToRemove);
         }
     }

@@ -20,16 +20,17 @@ namespace FrmPpal
     {
         ImperialArmy army;
         SoundPlayer player;
+        Trooper initialTrooper;
 
         public FrmPpal()
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + @"Resources\imperial_march.wav";
 
-        Trooper trooper = new(Blaster.EC17);
+            initialTrooper = new(Blaster.EC17);
             army = new(100);
             player = new SoundPlayer(path);
 
-            army.AddTrooper(trooper);
+            army.AddTrooper(initialTrooper);
             InitializeComponent();
         }
        
@@ -46,6 +47,8 @@ namespace FrmPpal
             {
                 cmbBlaster.Items.Add(armament);
             }
+
+            lstEjercito.Items.Add(initialTrooper.InfoTrooper());
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
