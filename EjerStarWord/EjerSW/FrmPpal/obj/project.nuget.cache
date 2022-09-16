@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "02OAZjVmjrkiPqdPlUcTdihYpWmdxWHtuYd6c62G7QbuCvFlFsbZoF/VowEmRVB0DmZ2hIKdkbHOkPrn6Uaurg==",
+  "dgSpecHash": "TgtEP3IlITIOa85TV3o0tuxwX+J21ftWoMqL6uutQ032+sLs0lGL4hdPfrQVrGXgrMDbt+vdAZA06SSaW0837Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\EjerStarWord\\EjerSW\\FrmPpal\\FrmPpal.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512",
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

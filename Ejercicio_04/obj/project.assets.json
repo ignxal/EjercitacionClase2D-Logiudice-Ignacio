@@ -8,19 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\ignac\\.nuget\\packages\\": {}
+    "C:\\Users\\ilogiudice\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\Ejercicio_04.csproj",
+      "projectUniqueName": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\Ejercicio_04.csproj",
       "projectName": "Ejercicio_04",
-      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\Ejercicio_04.csproj",
-      "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\obj\\",
+      "projectPath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\Ejercicio_04.csproj",
+      "packagesPath": "C:\\Users\\ilogiudice\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Ejercicio_04\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ignac\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ilogiudice\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9K6pCp8y+V0ZmqS8V+fTIyCHF/0Dt1HSznG6XLtgzN95G9LlKUGloqgjrBW55OsmX2HVeRIAamGe0/4ZL3G7zg==",
+  "dgSpecHash": "dZ4fhdYl9Ym5GF87rz8eR5D4vYcLlfIor/89FNVA8dS6a6P1duAPsXXbLRBd0/3N2twMnuNYJY2JXa61TeMoqA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\EjerStarWord\\EjerSW\\EntidadesStarWars\\EntidadesStarWars.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
