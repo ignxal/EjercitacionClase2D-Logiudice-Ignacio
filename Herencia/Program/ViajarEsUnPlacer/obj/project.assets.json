@@ -27,19 +27,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ilogiudice\\.nuget\\packages\\": {}
+    "C:\\Users\\ignac\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\ViajarEsUnPlacer.csproj",
+      "projectUniqueName": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\asd\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\ViajarEsUnPlacer.csproj",
       "projectName": "ViajarEsUnPlacer",
-      "projectPath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\ViajarEsUnPlacer.csproj",
-      "packagesPath": "C:\\Users\\ilogiudice\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\obj\\",
+      "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\asd\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\ViajarEsUnPlacer.csproj",
+      "packagesPath": "C:\\Users\\ignac\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\asd\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\Program\\ViajarEsUnPlacer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ilogiudice\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ignac\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -53,8 +53,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\ClassLibrary\\ClassLibrary.csproj": {
-              "projectPath": "C:\\Users\\ilogiudice\\Documents\\xgithb\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\ClassLibrary\\ClassLibrary.csproj"
+            "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\asd\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\ClassLibrary\\ClassLibrary.csproj": {
+              "projectPath": "C:\\Users\\ignac\\Documents\\Facultad\\Labo2\\asd\\EjercitacionClase2D-Logiudice-Ignacio\\Herencia\\ClassLibrary\\ClassLibrary.csproj"
             }
           }
         }
@@ -84,7 +84,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

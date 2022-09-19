@@ -1,0 +1,15 @@
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\bin\Debug\net6.0\Sobreescrito.exe
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\bin\Debug\net6.0\Sobreescrito.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\bin\Debug\net6.0\Sobreescrito.runtimeconfig.json
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\bin\Debug\net6.0\Sobreescrito.dll
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\bin\Debug\net6.0\Sobreescrito.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.dll
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\refint\Sobreescrito.dll
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\Sobreescrito.genruntimeconfig.cache
+C:\Users\ignac\Documents\Facultad\Labo2\asd\EjercitacionClase2D-Logiudice-Ignacio\Polimorfismo\Sobreescrito\obj\Debug\net6.0\ref\Sobreescrito.dll
