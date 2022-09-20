@@ -6,14 +6,21 @@ using System.Threading.Tasks;
 
 namespace Sobreescrito
 {
-    public class Sobreescrito
+    public abstract class Sobreescrito
     {
         public string nombre;
+        protected string miAtributo;
 
-        public Sobreescrito(string nombre)
+        public Sobreescrito(string nombre, string miAtributo)
         {
             this.nombre = nombre;
+            this.miAtributo = miAtributo;
         }
+
+        public abstract string MiPropiedad { get; }
+
+        public abstract string MiMetodo();
+
         public override string ToString()
         {
             return "¡Este es mi método ToString sobrescrito!";

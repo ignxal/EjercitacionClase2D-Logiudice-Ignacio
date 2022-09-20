@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Console.Title = "Ejercicio Sobre-Sobrescrito";
-            Sobreescrito objetoSobrescrito = new Sobreescrito("pepe");
+            Sobreescrito objetoSobrescrito = new SobreSobreescrito("pepe", "123");
 
             Console.WriteLine(objetoSobrescrito.ToString());
 
@@ -20,7 +20,5 @@
 
             Console.ReadKey();
         }
-
-
     }
 }
