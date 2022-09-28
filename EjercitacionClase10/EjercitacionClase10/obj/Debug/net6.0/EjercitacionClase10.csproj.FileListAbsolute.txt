@@ -1,0 +1,12 @@
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\bin\Debug\net6.0\EjercitacionClase10.deps.json
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\bin\Debug\net6.0\EjercitacionClase10.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\bin\Debug\net6.0\EjercitacionClase10.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.csproj.AssemblyReference.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.AssemblyInfoInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.AssemblyInfo.cs
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.csproj.CoreCompileInputs.cache
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\refint\EjercitacionClase10.dll
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\EjercitacionClase10.pdb
+C:\Users\ignac\Documents\Facultad\Labo2\EjercitacionClase2D-Logiudice-Ignacio\EjercitacionClase10\EjercitacionClase10\obj\Debug\net6.0\ref\EjercitacionClase10.dll
